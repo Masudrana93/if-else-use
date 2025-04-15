@@ -124,3 +124,14 @@ else{
     console.log("will take bread and banana");
 
 }
+
+//6. একজন মানুষের শরীরের তাপমাত্রা 100 ডিগ্রির বেশি অথবা কাশি থাকে,তাহলে সে ডাক্তারের কাছে যাবে। নচেৎ সে কাথা মুড়ি দিয়ে শুয়ে থাকবে। এর একটা প্রোগ্রাম লিখ।
+
+const temp = 99;
+const cough = false;
+
+if(temp > 100 || cough == true){
+    console.log("He will go to doctor");
+}else{
+    console.log("he will lay with blanket");
+}
