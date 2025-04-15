@@ -60,3 +60,67 @@ if (roomTemp >= 30){
 
 
 
+ // --------for Double condition { && and ||(or)} --------
+
+//  Practice:
+
+//1. একটা প্রোগ্রাম লিখ। যেটা চেক করবে, বয়স 18-এর বেশি কি না এবং উচ্চতা 60 ইঞ্চির বেশি কি না। তাহলে সে গাড়ি ঠেলবে, না হয় সে গাড়িতে বসে থাকবে।
+
+
+const age = 19;
+const height = 70;
+
+if(age > 18 && height > 60){
+    console.log("He will push the car");
+} else{
+    console.log("He will seat down on the car");
+
+}
+
+//2. একটা প্রোগ্রাম লিখ। যা চেক করবে, একজন শিক্ষার্থী ভর্তি হওয়ার যোগ্য কিনা। গণিত স্কোর 80-এর বেশি অথবা ইংরেজি স্কোর 85 -এর বেশি হতে হবে। আর এইগুলোর কোনোটাই সত্যি না হলে বলবি- তোকে বিয়ে দিয়ে দিব।
+
+const mathScore = 75;
+const englishScore = 86;
+
+if (mathScore > 80 || englishScore > 85){
+    console.log("You are eligible")
+}
+   
+else{
+    console.log("You will be married off");
+}
+
+//3. একজন স্টুডেন্টের  GPA যদি 5 হয় এবং পরিবারের মাসিক আয় 10000-এর কম হয়, তাহলে সে স্কলারশিপ পাবে। না হয় তাকে বেতন দিয়ে পড়তে হবে।
+
+const gpa = 4;
+const fMonthlyIncome = 9000;
+
+if(gpa == 5 && fMonthlyIncome < 10000){
+    console.log("He will get scholarship");
+} else {
+    console.log("You have to pay the tution fees");
+}
+
+//4. একজন চাকরিপ্রার্থী পরীক্ষা দিতে পারবে, যদি তার বয়স 30-এর কম হয় এবং কাজের অভিজ্ঞতা 2 বছরের বেশি হয়। আর না হয় চাকরির পরীক্ষা দিতে পারবে না।
+
+const candidateAge = 29;
+const jobExpe = 3;
+
+if(candidateAge < 30 && jobExpe > 2){
+    console.log("You are eligible to seat for exam");
+} else{
+    console.log("You are not eligible");
+}
+
+//5. তোর ফ্রিজের ভিতর ডিমের সংখ্যা 12-এর বেশি অথবা মুরগি না থাকে, তাহলে তুই ডিমের কোরমা রান্না করবি। আর না হলে পাউরুটি আর কলা খাবি।
+
+const eggQty = 10;
+const chicken = 1;
+
+if(eggQty > 12 || chicken == 0){
+    console.log("Please cook egg curry");
+} 
+else{ 
+    console.log("will take bread and banana");
+
+}
