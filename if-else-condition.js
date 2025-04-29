@@ -147,3 +147,24 @@ if(attendance > 80 && homework == true){
     console.log("Auto fail");
 }
 
+//8. যদি তোর বাসায় বিদ্যুৎ চলে যায় এবং মোবাইলে চার্জ না থাকে, তাহলে তুই পড়তে বসবি। না হলে ভিডিও গেম খেলবি। এর জন্য কোড লিখ।
+
+const electricityGone = true;
+const mobileChargeZero = true;
+
+if( electricityGone == true && mobileChargeZero == true ){
+    console.log("You will sit to study");
+}else{
+    console.log("You will play a video game");
+}
+
+//9. শার্টের দাম 1000 টাকার বেশি হলে এবং কুপন থাকলে তোকে 20 পারসেন্ট ডিসকাউন্ট দেয়া হবে । এর জন্য প্রোগ্রাম লিখ।
+
+const shirtPrice  = 1050;
+const coupon = true;
+
+if( shirtPrice > 1000 && coupon == true){
+    console.log("You will get 20% discoount");
+}else{
+    console.log("You are not eligible for getting discount");
+}
