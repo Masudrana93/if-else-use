@@ -135,3 +135,15 @@ if(temp > 100 || cough == true){
 }else{
     console.log("he will lay with blanket");
 }
+
+//7. একজন শিক্ষার্থীকে পরীক্ষা দিতে দেওয়া হবে, যদি তার উপস্থিতি 80 শতাংশের বেশি হয় এবং হোমওয়ার্ক জমা দেয়া থাকে । নচেৎ অটো ফেল। এই শর্তের জন্য প্রোগাম লিখ।
+
+const attendance = 81;
+const homework = false;
+
+if(attendance > 80 && homework == true){
+    console.log("Participant will be allowed");
+}else{
+    console.log("Auto fail");
+}
+
