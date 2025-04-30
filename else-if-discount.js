@@ -61,4 +61,14 @@ if(customerAge < 12){
     console.log("You will have to pay full amount of bill");
 }
 
-//3. যদি কারো ব্যাংক অ্যাকাউন্টে ব্যালেন্স ১০০০ টাকার কম হয়, তাহলে বলবি, “ডিপোজিট কর”। ১০০০ থেকে বেশি হলেবলবি, “ বিন্দাস লাইফ এনজয় কর”।
+//3. যদি কারো ব্যাংক অ্যাকাউন্টে ব্যালেন্স ১০০০ টাকার কম হয়, তাহলে বলবি, “ডিপোজিট কর”। ১০০০ থেকে বেশি হলে বলবি, “ বিন্দাস লাইফ এনজয় কর”। আর ৫০০০ এর বেশি হলে বলবি,“তুই ধনী, আমাকে বিয়ে কর।”
+
+const accountBalance = 1200;
+
+if(accountBalance < 1000){
+    console.log("please deposit money");
+}else if(accountBalance > 1000){
+    console.log("enjoy bindas life");
+}else if(accountBalance > 5000){
+    console.log("you are rich, marry me");
+}
