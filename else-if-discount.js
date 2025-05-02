@@ -121,3 +121,42 @@ if(level > 50){
 }else if(level < 10){
     console.log("Novice");
 }
+
+//*******Nested If-else : এক শর্ত পার হওয়ার পর সেই শর্তের ভিতরে আরেকটা শর্ত। ***********
+
+
+//Example -1
+
+const money = 400;
+const popCornPrice = 60;
+
+if(money >= 300){
+    console.log("Going to watch a movie");
+
+    if(popCornPrice <= 50){
+        console.log("Buying PopCorn");
+    }else{
+        console.log("PopCorn is Expensive")
+    }
+}else{
+    console.log("Home Alone.");
+}
+
+//Practice
+
+//1. বন্ধু যদি দাওয়াত দেয়, তাহলে তার জন্মদিনের পার্টিতে তুই যাবি। আর যদি তোকে দাওয়াত না দেয়, তাহলে তাকে ফ্রেন্ডলিস্ট থেকে বের করে দিবি। আর যদি বন্ধু দাওয়াত দিয়ে ফেলে, তাহলে দাওয়াতে যাওয়ার সময় চেক করে দেখবি, পকেটে কত টাকা আছে। যদি 1000 টাকার বেশি থাকে, তাহলে বন্ধুর জন্য একটা গিফট নিয়ে যাবি। না হয় খালি হাতে যাবি।
+
+const friendInvite = true;
+const pocketMoney = 12000;
+
+if(friendInvite == true){
+    console.log("will join his birthday party");
+    if(pocketMoney > 1000){
+        console.log("will go with gift");
+    }else{
+        console.log("go with empty hand");
+    }
+}else{
+    console.log("Delete from friendlist");
+}
+
