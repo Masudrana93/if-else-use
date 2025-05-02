@@ -160,3 +160,11 @@ if(friendInvite == true){
     console.log("Delete from friendlist");
 }
 
+//2. যদি তোর বাসায় মেহমান আসে, প্রথমে জিজ্ঞেস করবি, তারা চা খাবে কি না। যদি চা খেতে চায়,তাহলে জিজ্ঞেস করবি, সাথে বিস্কুট খাবে কি না। না চাইলে বলবি, শুধু চা রেডি। আ যদি চা-ও না খেতে চায়, বলবি, বসে বসে স্টার জলসা দেখুন।
+
+const teaTake = true;
+const biscuit = true;
+
+if(teaTake == ture){
+    console.log("")
+}
