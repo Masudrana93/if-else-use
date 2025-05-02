@@ -63,12 +63,61 @@ if(customerAge < 12){
 
 //3. যদি কারো ব্যাংক অ্যাকাউন্টে ব্যালেন্স ১০০০ টাকার কম হয়, তাহলে বলবি, “ডিপোজিট কর”। ১০০০ থেকে বেশি হলে বলবি, “ বিন্দাস লাইফ এনজয় কর”। আর ৫০০০ এর বেশি হলে বলবি,“তুই ধনী, আমাকে বিয়ে কর।”
 
-const accountBalance = 1200;
+const accountBalance = 5200;
 
-if(accountBalance < 1000){
-    console.log("please deposit money");
+if(accountBalance > 5000){
+    console.log("you are rich, marry me");
+    
 }else if(accountBalance > 1000){
     console.log("enjoy bindas life");
-}else if(accountBalance > 5000){
-    console.log("you are rich, marry me");
+}else if(accountBalance < 1000){
+    console.log("please deposit money");
+}
+
+// 4. একটা পরীক্ষায় যদি কোনো ছাত্রের মার্কস ৫০ এর কম হলে বলবি “Fail”, ৫০ থেকে ৮০ এর মধ্যে হলে বলবি “Pass”, আর ৮০ এর বেশি হলে বলবি “A+”।
+
+const marks = 81;
+
+if(marks > 80){
+    console.log("A+");
+}else if(marks >= 50){
+    console.log("Pass");
+}else if(marks < 50){
+    console.log("Fail");
+}
+
+//5. কোনো বইয়ের পৃষ্ঠাসংখ্যা 100 এর কম হলে বলবি “Small Book”, 100 থেকে 500 এর মধ্যে হলে বলবি “Mid-size Book” , আর 500 এর বেশি হলে বলবি “Heart-attack size book” ।
+
+const bookPages = 200;
+
+if(bookPages > 500){
+    console.log("Heart-attck size book");
+}else if(bookPages >= 100){
+    console.log("Mid-size book");
+}else if( bookPages < 100){
+    console.log("Small book");
+}
+
+//6. একটা প্রোগ্রাম লিখ । যা চেক করবে, তাপমাত্রা 0 ডিগ্রির কম হলে বলবে “Ice”, 0 থেকে 20 এর মধ্যে হলে বলবে “Cool Cool” , আর 20 এর বেশি হলে বলবে “Hot Hot”।
+
+const tempareture = 2;
+
+if(tempareture > 20){
+    console.log("Hot Hot");
+}else if(tempareture >= 0){
+    console.log("Cool Cool");
+}else if(tempareture < 0){
+    console.log("Ice");
+}
+
+//7. তোর একটা গেমিং অ্যাপ আছে। প্লেয়ারের লেভেল 10 এর কম হলে বলবি “Novice”, 10 থেকে 50 এর মধ্যে হলে বলবি “Expert”, আর 50 এর বেশি হলে বলবি “Pro Gamer”।
+
+const level = 9;
+
+if(level > 50){
+    console.log("Pro Gamer");
+}else if(level >= 10){
+    console.log("Expert");
+}else if(level < 10){
+    console.log("Novice");
 }
