@@ -160,11 +160,58 @@ if(friendInvite == true){
     console.log("Delete from friendlist");
 }
 
-//2. যদি তোর বাসায় মেহমান আসে, প্রথমে জিজ্ঞেস করবি, তারা চা খাবে কি না। যদি চা খেতে চায়,তাহলে জিজ্ঞেস করবি, সাথে বিস্কুট খাবে কি না। না চাইলে বলবি, শুধু চা রেডি। আ যদি চা-ও না খেতে চায়, বলবি, বসে বসে স্টার জলসা দেখুন।
+//2. যদি তোর বাসায় মেহমান আসে, প্রথমে জিজ্ঞেস করবি, তারা চা খাবে কি না। যদি চা খেতে চায়,তাহলে জিজ্ঞেস করবি, সাথে বিস্কুট খাবে কি না। না চাইলে বলবি, শুধু চা রেডি। আর যদি চা-ও না খেতে চায়, বলবি, বসে বসে স্টার জলসা দেখুন।
 
 const teaTake = true;
-const biscuit = true;
+const biscuitTake = false;
 
-if(teaTake == ture){
-    console.log("")
+if(teaTake == true){
+    if(biscuitTake == false){
+        console.log("Only tea is ready for you");
+    }
+}else{
+    console.log("Please have a seat and watch Star Jalsha");
+}
+
+//3. তুই একটা অ্যাপ বানিয়েছিস। প্রথমে চেক করবি, ব্যবহারকারীর অ্যাকাউন্ট অ্যাকটিভ কি না । যদি অ্যাকটিভ হয়, তার সাবস্ক্রিপশন চেক করবি। যদি প্রিমিয়াম হয়, তাকে প্রিমিয়াম ফিচার দেখাবি। না হলে বলবি, ‘ফ্রি ভার্সন দেখুন।’
+
+const userAccountActive = true;
+const premium = false;
+
+if(userAccountActive === true){
+    if(premium === true){
+        console.log("see the premium feature");
+    
+    }else{
+        console.log("Please see the free version");
+    }
+}
+
+//4.তোর বাসার ফ্রিজে খাবার আছে কি না, চেক করবি। যদি থাকে, খাবার গরম করবি। আর যদি না থাকে, চেক করবি, ফুড ডেলিভারি অ্যাপ কাজ করছে কি না। কাজ করলে অর্ডার করবি, না হলে বলবি, ‘আজকে আমি রোজা।’
+
+const foodAtHome = false;
+const appFoodWork = true;
+
+if(foodAtHome === true){
+    console.log("Heat the food");
+}else{
+    
+   if(appFoodWork === true){
+     console.log("order the food");
+   }else{
+    console.log("I am fasting");
+   }
+}
+
+//5. ধর, তুই একটা পার্টি করবি। প্রথমে দেখবি, পার্টিতে 100 জনের বেশি গেস্ট আসবে কি না । তাহলে চেক করবি, সবাই গিফট আনবে কি না। যদি আনে, বলবি, ‘Lets party all night.’ নচেৎ বলবি, ‘I will party with myself.’
+
+const partyAttendance = 120;
+const allBringGift = false;
+
+if(partyAttendance > 100){
+ if(allBringGift === true){
+    console.log("Lets party all night.");
+ }else{
+    console.log("I will party with myself.");
+ }
 }
